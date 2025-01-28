@@ -1,0 +1,39 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+*.venv
+
+# FastAPI specific
+*.db
+
+# Logs
+*.log
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Dependency management files
+Pipfile.lock
+poetry.lock
+
+# Miscellaneous
+*.bak
+*.swp
+*.swo
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Coverage reports
+.coverage
+coverage.xml
+*.cover
+
+# Other temporary files
+tmp/
