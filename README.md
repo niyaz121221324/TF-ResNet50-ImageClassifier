@@ -36,6 +36,7 @@
 
 ## Пример использования
 ```python
+from PIL import Image
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 import numpy as np
@@ -46,9 +47,9 @@ model = load_model('model_path.h5')
 # Загрузка изображения
 img_path = 'path_to_image.jpg'
 img = image.load_img(img_path, target_size=(224, 224))
-img_array = image.img_to_array(img)
-img_array = np.expand_dims(img_array, axis=0)
-img_array /= 255.0
+image = image.convert("RGB")
+image = image.resize(target_size, Image.LANCZOS)
+image_array = np.array(imag) / 255.0
 
 # Предсказание
 predictions = model.predict(img_array)
