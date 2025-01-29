@@ -27,6 +27,7 @@ poetry.lock
 *.swp
 *.swo
 *.h5
+*.keras
 
 # Jupyter Notebooks checkpoints
 .ipynb_checkpoints/
