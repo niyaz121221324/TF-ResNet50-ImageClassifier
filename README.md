@@ -32,7 +32,8 @@
    ```bash
    python main.py
    ```
-Данный проект на выходе предоставляет файл формата h5
+Данный проект на выходе предоставляет файл формата .keras.
+В папке dataset предоставлены варианты dataset для обучения.
 
 ## Пример использования
 ```python
@@ -42,7 +43,7 @@ from tensorflow.keras.models import load_model
 import numpy as np
 
 # Загрузка модели
-model = load_model('model_path.h5')
+model = load_model('model_path.keras')
 
 # Загрузка изображения
 img_path = 'path_to_image.jpg'
