@@ -89,7 +89,7 @@ def create_new_model():
 
     model_folder = os.path.join(save_path, datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
     os.makedirs(model_folder, exist_ok=True)
-    model.save(os.path.join(model_folder, 'model.keras'))
+    model.save(os.path.join(model_folder, 'model.h5'))
 
     save_metadata(model_folder, train_gen.class_indices)
     print(f"Model saved at: {model_folder}")
